@@ -8,6 +8,7 @@ body,
 html {
     width: 100%;
     height: 100%;
+    font-size: 16px;
     font-family: 'Carrois Gothic SC', sans-serif;
     color: #f8f9fa;
 }
@@ -22,6 +23,7 @@ html {
 .content-text {
   width: 580px;
   margin: auto;
+  background: rgba(0, 0, 0, .4);
 }
 
 .content button {
@@ -29,7 +31,32 @@ html {
 }
 
 hr {
-  /* width: 580px; */
-  height: 2px;
+  width: 40%;
+  height: .1rem;
   background: rgba(226, 226, 226, .85);
+}
+
+@media only screen and (max-width: 600px) {
+    .content {
+      margin-top: 90%;
+      padding-top: unset;
+    }
+
+    .content-text {
+      width: 100%;
+    }
+
+    .content-text p {
+      white-space: normal;
+      font-size: 1rem;
+    }
+
+    hr {
+      width: 85%;
+      height: .05rem;
+    }
+
+    .content button {
+      width: 100%;
+    }
 }
